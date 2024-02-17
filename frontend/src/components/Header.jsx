@@ -6,6 +6,7 @@ import {
 	NavLink,
 } from 'react-bootstrap';
 import { FaShoppingCart, FaUser } from 'react-icons/fa';
+import logo from '../assets/logo.png';
 
 const Header = () => {
 	return (
@@ -17,7 +18,10 @@ const Header = () => {
 				collapseOnSelect
 			>
 				<Container>
-					<Navbar.Brand href="/">ProShop</Navbar.Brand>
+					<Navbar.Brand href="/">
+						<img src={logo} alt="Hare Krishna shop" />
+						ProShop
+					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="ms-auto">
